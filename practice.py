@@ -123,17 +123,36 @@
 
 #count odd and even numbers in a list
 
-numl = input("enter the list:")
-num = [int(x) for x in numl.split(",")]
+# numl = input("enter the list:")
+# num = [int(x) for x in numl.split(",")]
 
-l = len([num])
-even_count = 0
-odd_count = 0
+# l = len([num])
+# even_count = 0
+# odd_count = 0
 
-for i in range(l):
-    if num[i] % 2 == 0:
-        even_count += 1
+# for i in range(l):
+#     if num[i] % 2 == 0:
+#         even_count += 1
+#     else:
+#         odd_count += 1  
+# print(f"even count is:{even_count}")
+# print(f"odd count is:{odd_count}")
+
+
+#login system usinng lists username and password
+user_names = ["user1", "user2", "user3"]
+passwords = ["pass1", "pass2", "pass3"]
+
+name = input("enter your username:")
+
+for u in user_names:
+    if name == u:
+        pwd = input("enter your password:")
+        index = user_names.index(u)
+        if pwd == passwords[index]:
+            print("login successful")
+        else:
+            print("incorrect password")
+        break
     else:
-        odd_count += 1  
-print(f"even count is:{even_count}")
-print(f"odd count is:{odd_count}")
+         print("username not found")

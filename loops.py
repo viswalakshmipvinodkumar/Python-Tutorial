@@ -21,3 +21,5 @@ while n > 0:
     n -= 1
 else:  # executes when the loop condition becomes false and loop is not terminated by break
     print("loop is ended")
+
+
