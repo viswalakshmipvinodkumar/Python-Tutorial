@@ -124,6 +124,8 @@ python-basics/
 │   ├── sets.py
 │   ├── dictionaries.py
 │   └── functions.py
+|
+├── practice problems/
 │
 └── README.md
 ```
